@@ -1,6 +1,6 @@
 const form = document.getElementById("formAgendamento");
 const listaHorarios = document.getElementById("listaHorarios");
-const apiUrl = 'http://localhost:8080/api/agendamentos'; // O endereço do seu back-end
+const apiUrl = 'easy-lura-joaoafonso-575cd691.koyeb.app/'; // O endereço do seu back-end
 
 // 1. FUNÇÃO PARA BUSCAR OS DADOS NO BACK-END
 async function buscarAgendamentosDoServidor() {
@@ -74,4 +74,5 @@ form.addEventListener("submit", async function(e) {
 
 // 4. INICIALIZAÇÃO
 // Chama a função para buscar os agendamentos assim que a página carrega
+
 buscarAgendamentosDoServidor();
