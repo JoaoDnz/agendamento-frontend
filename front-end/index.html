@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento - Espaço LT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agendamento Espaço LT</h1>
+        <p>Reserve sua quadra de vôlei!</p>
+    </header>
+
+    <main>
+        <form id="formAgendamento">
+            <label for="nome">Nome do cliente:</label>
+            <input type="text" id="nome" required>
+
+            <label for="dataHora">Data e horário:</label>
+            <input type="datetime-local" id="dataHora" required>
+
+            <label for="quadra">Quadra:</label>
+            <select id="quadra">
+                <option value="1">Quadra 1</option>
+                <option value="2">Quadra 2</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+
+        <h2>Horários agendados:</h2>
+        <ul id="listaHorarios"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
